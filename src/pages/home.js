@@ -93,23 +93,35 @@ export class Home extends React.Component {
                         allowFullScreen></iframe>
             </div>
             <div className={"container-home-page container-description"}>
-                <h2>3D Modelisation</h2>
-                <h3>We are launching a video game in a 3D environment with a recognition system
-                    of play to provide us with a dataset of image and action linked.</h3>
-                <h3>With a CNN we train to find navigation aircraft between two frames.</h3>
-                <h3
-                    onClick={() => {
-                        window.open("https://github.com/victordalet/video_game-_autonomous_driving.git", "_blank");
-                    }}
-                    style={{cursor: "pointer"}}
-                >GITHUB</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/2Npjc9fhwTU?si=UsFyAIISzzVMFrOs"
-                        title="YouTube video player"
+                <h2>CNN - Smart Driving</h2>
+                <h3>With tensorflow, we create a cnn of two images (one at time T, and one at time T + n). We enter this
+                    model using our videos, the aim being to make our algorithm understand when we should turn or move
+                    forward without direct information (without knowing where an obstacle is, for example).</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6-26u5P5S_c?si=6I3hj8C02tQNYvHJ"
+                        title="YouTube video player" frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerPolicy="strict-origin-when-cross-origin"
                         allowFullScreen></iframe>
             </div>
+            <div className={"container-home-page container-description"}
+                 style={{
+                     height: "100vh",
+                 }}
+            >
+                <h2>3D Modelisation</h2>
+                <h3>By mixing our different techniques, we're going to continue training our model with a 3D simulation,
+                    so as to generate more data.</h3><h3>We're still working on it, we'll share the results here in a
+                few
+                moments. </h3> <h3>This 3D work is on another <span></span>
+                <span
+                    onClick={() => {
+                        window.open("https://github.com/victordalet/video_game-_autonomous_driving.git", "_blank");
+                    }}
+                    style={{cursor: "pointer"}}
+                >GITHUB</span></h3>
+            </div>
             <Footer/>
-        </div>);
+        </div>)
+            ;
     }
 }
