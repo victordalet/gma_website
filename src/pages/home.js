@@ -59,7 +59,10 @@ export class Home extends React.Component {
             <div className={"container-home-page container-description"}>
                 <h2>Robotic Arm</h2>
                 <h3>Our first idea was to raise or lower a stick on the steering wheel to move it, but the
-                    Servo-motor does not have enough power.</h3>
+                    Servo-motor does not have enough power.<br/> Finally, we use a system of pulleys connected to
+                    strings on either side of the steering wheel, which
+                    allows the arm to pull the string and turn the car to one side (so there are 2 for the left
+                    and right).</h3>
                 <div className={"short-video"}>
                     <video width="560" height="315" controls>
                         <source src="arm_test_1.mp4" type="video/mp4"/>
