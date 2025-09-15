@@ -57,6 +57,14 @@ export class Home extends React.Component {
                     >GITHUB</h2>
                 </div>
                 <div className={"container-home-page container-description"}>
+                    <h2>Example of result</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/O62c3HY-GK4?si=Q3RYDvPm_lzIVaEE"
+                            title="YouTube video player" frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen></iframe>
+                </div>
+                <div className={"container-home-page container-description"}>
                     <h2>Robotic Arm</h2>
                     <h3>Our first idea was to raise or lower a stick on the steering wheel to move it, but the
                         Servo-motor does not have enough power.<br/> Finally, we use a system of pulleys connected to
